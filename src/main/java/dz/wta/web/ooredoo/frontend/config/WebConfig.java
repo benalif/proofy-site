@@ -1,9 +1,11 @@
 package dz.wta.web.ooredoo.frontend.config;
 
+import org.springframework.context.MessageSource;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -19,11 +21,15 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		super.addInterceptors(registry);
 	}
 
-//	@Override
-//	public void addCorsMappings(CorsRegistry registry) {
-//	
-//		registry.addMapping("/**");
-//	}
+    @Bean
+    MessageSource messageSource ()
+    {
+    	ReloadableResourceBundleMessageSource messageSource  = new ReloadableResourceBundleMessageSource();
+    	messageSource.setBasename("classpath:validation");
+		messageSource.setDefaultEncoding("UTF-8");
+		messageSource.setUseCodeAsDefaultMessage(true);
+		return messageSource;
+    }
 	
 	
 }

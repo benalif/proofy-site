@@ -11,6 +11,8 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 import dz.wta.web.ooredoo.frontend.filter.AppFilter;
 
+
+
 public class WebAppInitializer implements WebApplicationInitializer {
 
 	public void onStartup(ServletContext servletContext) throws ServletException {
