@@ -14,6 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableWebMvc
 @ComponentScan(basePackages = "dz.wta.web.ooredoo")
 @PropertySource(value = "classpath:config-uat.properties")
+
 public class WebConfig extends WebMvcConfigurerAdapter {
 
 	@Override

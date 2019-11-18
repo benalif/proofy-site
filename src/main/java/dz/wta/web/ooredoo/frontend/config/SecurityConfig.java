@@ -27,13 +27,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.csrf().disable();
+
 		http.httpBasic().disable();
-		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-		http.authorizeRequests().antMatchers("").permitAll().antMatchers("/").hasAnyRole("ADMIN").anyRequest().authenticated();
-		
-		http.addFilter(new JWTAuthentificationFilter(authenticationManager()));//Authentifier avec login si oui crier un token jwt
-        http.addFilterBefore(new JWTAuthorisationFilter(), UsernamePasswordAuthenticationFilter.class);//Authentifier avec token crié deja
+
+		http.csrf().disable();// cockies..
+
+		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);// STATELESS Pas session;
+
+		http.authorizeRequests().antMatchers("/home", "/login", "/save-user", "/list-role", "/list-user", "/add", "/save", "/").permitAll()// Pas privilege .
+
+				.antMatchers("/users", "/roles").hasAnyAuthority("ADMIN")
+
+				.anyRequest().authenticated();
+
+		http.addFilter(new JWTAuthentificationFilter(authenticationManager()));// Authentifier avec login si oui crier un token jwt
+		http.addFilterBefore(new JWTAuthorisationFilter(), UsernamePasswordAuthenticationFilter.class);// Authentifier avec token crié deja
 	}
 
 	@Bean
