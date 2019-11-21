@@ -1,0 +1,16 @@
+dz/wta/web/ooredoo/frontend/model/LoginRequest.class
+dz/wta/web/ooredoo/frontend/repository/RoleRepository.class
+dz/wta/web/ooredoo/frontend/config/PersistenceConfig.class
+dz/wta/web/ooredoo/frontend/model/GenericResponse.class
+dz/wta/web/ooredoo/frontend/entity/User.class
+dz/wta/web/ooredoo/frontend/entity/OrderItem.class
+dz/wta/web/ooredoo/frontend/config/WebAppInitializer.class
+dz/wta/web/ooredoo/frontend/model/LoginResponse.class
+dz/wta/web/ooredoo/frontend/exception/ExceptionHandlerAdvice.class
+dz/wta/web/ooredoo/frontend/controller/MainController.class
+dz/wta/web/ooredoo/frontend/entity/Role.class
+dz/wta/web/ooredoo/frontend/config/WebConfig.class
+dz/wta/web/ooredoo/frontend/entity/Order.class
+dz/wta/web/ooredoo/frontend/entity/Product.class
+dz/wta/web/ooredoo/frontend/filter/AppFilter.class
+dz/wta/web/ooredoo/frontend/repository/UserRepository.class

@@ -7,7 +7,6 @@ import javax.servlet.ServletRegistration;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.filter.DelegatingFilterProxy;
 import org.springframework.web.servlet.DispatcherServlet;
 
 public class WebAppInitializer implements WebApplicationInitializer {
@@ -17,7 +16,6 @@ public class WebAppInitializer implements WebApplicationInitializer {
 		
 		context.register(WebConfig.class);
 
-		servletContext.addFilter("springSecurityFilterChain", new DelegatingFilterProxy("springSecurityFilterChain")).addMappingForUrlPatterns(null, false, "/*");
 
 		servletContext.addListener(new ContextLoaderListener(context));
 		servletContext.setInitParameter("spring.profiles.active", "uat");

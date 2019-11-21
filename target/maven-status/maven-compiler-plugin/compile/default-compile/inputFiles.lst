@@ -1,0 +1,16 @@
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/model/GenericResponse.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/config/PersistenceConfig.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/filter/AppFilter.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/entity/Order.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/repository/RoleRepository.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/config/WebAppInitializer.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/controller/MainController.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/entity/Product.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/config/WebConfig.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/entity/Role.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/entity/OrderItem.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/repository/UserRepository.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/entity/User.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/exception/ExceptionHandlerAdvice.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/model/LoginRequest.java
+/Users/imac/Documents/Documents/workspace-sts-3.9.4.RELEASE/frontend/src/main/java/dz/wta/web/ooredoo/frontend/model/LoginResponse.java

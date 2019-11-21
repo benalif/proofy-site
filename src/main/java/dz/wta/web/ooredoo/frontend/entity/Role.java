@@ -2,6 +2,7 @@ package dz.wta.web.ooredoo.frontend.entity;
 
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,8 +15,16 @@ import javax.persistence.Table;
 
 public class Role {
 
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private String id;
+	
+	@Column(name = "name")
 	private String name;
+	
+	@ManyToMany(mappedBy = "roles")
 	private Set<User> users;
 	
 	public Role()
@@ -23,8 +32,6 @@ public class Role {
 		
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	public String getId() {
 		return id;
 	}
@@ -41,7 +48,7 @@ public class Role {
 		this.name = name;
 	}
 
-	@ManyToMany(mappedBy = "roles")
+
 	public Set<User> getUsers() {
 		return users;
 	}
