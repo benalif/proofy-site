@@ -33,6 +33,10 @@ public class Order {
 	
 	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
 	private Set<OrderItem> orderItem;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name="seller_id")
+	private Seller seller;
 
 	public long getId() {
 		return id;
@@ -64,6 +68,14 @@ public class Order {
 
 	public void setOrderItem(Set<OrderItem> orderItem) {
 		this.orderItem = orderItem;
+	}
+
+	public Seller getSeller() {
+		return seller;
+	}
+
+	public void setSeller(Seller seller) {
+		this.seller = seller;
 	}
 
 }
